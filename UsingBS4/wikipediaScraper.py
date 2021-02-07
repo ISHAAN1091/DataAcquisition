@@ -39,7 +39,7 @@ for row in rows[1:]:
 cleanedRows[2].insert(0, cleanedRows[1][0])
 
 # Storing the cleaned data
-with open('./WikipediaScraper/data.csv', 'w', newline='') as f:
+with open('./UsingBS4/data.csv', 'w', newline='') as f:
     writer = csv.writer(f)
     for row in cleanedRows:
         writer.writerow(row)
